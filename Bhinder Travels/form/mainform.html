@@ -1,0 +1,172 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Bhinder Travel</title>
+	    <script src="//code.jquery.com/jquery.min.js"></script>
+	    <link rel="stylesheet" href="bootstrap.min.css">
+
+	    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
+		<link rel="stylesheet" type="text/css" href="mainform.css">
+ 
+	  </head>
+	<body>
+	  <header>
+	    <nav id="header-nav" class="navbar navbar-default">
+	      <div class="container">
+	        <div class="navbar-header">
+	          
+	          <div class="navbar-brand">
+	            <a href="index.html"><h1>Bhinder Travels</h1></a>
+	            <p>
+	              <span>Tour & Travels</span>
+	            </p>
+	          </div>
+	
+
+	          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	        </div>
+	        
+	        <div id="collapsable-nav" class="collapse navbar-collapse">
+	           <ul id="nav-list" class="nav navbar-nav navbar-right">
+	            <li id="navHomeButton" class="visible-xs active">
+	              <a href="index.html">
+	                <span class="glyphicon glyphicon-home"></span> Home</a>
+	            </li>
+	            <li id="navMenuButton">
+	              <a href="index.html" onclick="$dc.loadMenuCategories();">
+	                <span class="glyphicon glyphicon-tasks"></span><br class="hidden-xs"> Booking</a>
+	            </li>
+	            <li>
+	              <a href="#">
+	                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+	            </li>
+	            <li>
+	              <a href="#">
+	                <span class="glyphicon glyphicon-earphone"></span><br class="hidden-xs">Contact Us</a>
+	            </li>
+	            <li id="phone" class="hidden-xs">
+	              <a href="tel:+91-7009377093">
+	                <span>+91-7009377093</span></a><div>* Call Now</div>
+	            </li>
+	          </ul><!-- #nav-list -->
+	        </div><!-- .collapse .navbar-collapse -->
+	      </div><!-- .container -->
+	    </nav><!-- #header-nav -->
+	  </header>
+	
+
+	  <div id="call-btn" class="visible-xs">
+	    <a class="btn" href="tel:+91-7009377093">
+	    <span class="glyphicon glyphicon-earphone" style="color: black; text-shadow: 0.3px 0.3px 0.3px #222;"> </span>
+	    <span style="color: black; text-shadow: 0.3px 0.3px 0.3px #222;">+91-7009377093</span>
+	    </a>
+	  </div>
+	  <div id="xs-deliver" class="text-center visible-xs" style="color: grey; text-shadow: 0.3px 0.3px 0.3px #222;">* Call Now</div>
+	
+	<!--form-->
+	<!-- Start Booking Section -->
+ <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+  <div class="w3-content" style="max-width:600px">
+    <h4 class="w3-center">Booking</h4>
+
+    <script type="text/javascript">var submitted=false;</script>
+    
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='http://zerobudget.club/';}"></iframe> 
+    
+    <!-- Update the Google forms URL in action-->
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd8RzMol-36fkm6-mOBkIgZRA43Rwk3iHcZYgf8qZ3sB0iWHw/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+      
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.866373264">
+      </div>
+      <div class="w3-section">
+        <label>Email Id</label>
+        <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.755341987">
+      </div>
+      <div class="w3-section">
+        <label>Phone Number</label>
+        <input class="w3-input w3-border" type="text" placeholder="Phone" id="phone" required name="entry.1526657048">
+      </div>
+      <div class="elem-group inlined">
+      <label for="checkin-date">Check-in Date</label>
+      <input type="date" id="checkin-date" required name="entry.1384667088" required>
+     </div>
+    <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" required name="entry.1616679454" required>
+    </div><br>
+    <div class="w3-section"><br>
+    <label for="room-selection">Select Car Preference</label>
+    <select id="room-selection" required name="entry.723297424" required>
+   <option value="connecting">Swift Dezire</option>
+        <option value="adjoining">Honda Amaze</option>
+        <option value="adjacent">Toyota Etios</option>
+        <option value="connecting">Innova Crysta</option>
+        <option value="connecting">Toyota Innova</option>
+    </select>
+    <div class="w3-section">
+    <label for="message">Message</label>
+    <textarea id="message" required name="entry.1277565741" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+      <div class="w3-section">
+        <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit">Book Now</button>
+      </div>
+    </form>
+</div>
+</div>
+
+<!-- End Contact Section -->
+
+	  <footer class="panel-footer">
+	    <div class="container">
+	      <div class="row">
+	        <section id="hours" class="col-sm-4">
+	          <span>Quick Links:</span><br>
+	          <a href="#"><span class="glyphicon glyphicon-chevron-right" style="font-size: 1em;"></span> Home</a><br>
+	          <a href="#"><span class="glyphicon glyphicon-chevron-right" style="font-size: 1em;"></span> Booking</a><br>
+	          <a href="#"><span class="glyphicon glyphicon-chevron-right" style="font-size: 1em;"></span> About</a><br>
+	          <a href="#"><span class="glyphicon glyphicon-chevron-right" style="font-size: 1em;"></span> Contact Us</a>
+	          
+	          <hr class="visible-xs" style="color: #f6b319">
+	        </section>
+	        <section id="address" class="col-sm-4">
+	          <span>Office Contact:</span><br>
+	          <span class="glyphicon glyphicon-map-marker" style="font-size: 1em;"></span> Meera Kot, Preet Vihar, Airport Road<br>
+	             Amritsar, Punjab 143101<br>
+	          <span class="glyphicon glyphicon-earphone" style="font-size: 1em;"></span> +91-7009377093<br>
+	          <span class="glyphicon glyphicon-envelope" style="font-size: 1em;"></span> gurjantbhinder37@gmail.com
+	          
+	          <hr class="visible-xs" style="color: #f6b319">
+	        </section>
+	        <section id="testimonials" class="col-sm-4">
+	          <p>"It is never been simpler to find the best services nationwide. With thousands of satisfied customers every day, you can get best services through Bhinder Travels."</p>
+	          
+	        </section>
+	      </div>
+	      <div class="text-center">&copy; Copyright Bhinder Travels 2021. All rights reserved & designed by Vijay Mishra</div>
+	    </div>
+	  </footer>
+	
+
+	  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+	   <script src="js/jquery-3.5.1.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/ajax-utils.js"></script>
+	  <script src="js/script.js"></script>
+	</body>
+	</html>
