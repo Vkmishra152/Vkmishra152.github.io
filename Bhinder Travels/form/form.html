@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking Form</title>
+	<link rel="stylesheet" href="form.css">
+	<link rel="stylesheet" href="form.js">
+</head>
+<body>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+	 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdYcwuVIa_vhLRglEmj6rvHxE7qYyw-UA31lrrFIBZIr0gzDQ/formResponse" method="post" target="hidden_iframe">
+  <div class="elem-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" required name="visitor_name" placeholder="Your Name" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">E-mail Id</label>
+    <input type="email" id="email" required name="visitor_email" placeholder="your.email@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" required name="visitor_phone" placeholder="Phone" >
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check-in Date</label>
+    <input type="date" id="checkin-date" required name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Check-out Date</label>
+    <input type="date" id="checkout-date" required name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Car Preference</label>
+    <select id="room-selection" required name="room_preference" required>
+        <option value="connecting">Swift Dezire</option>
+        <option value="adjoining">Honda Amaze</option>
+        <option value="adjacent">Toyota Etios</option>
+        <option value="connecting">Innova Crysta</option>
+        <option value="connecting">Toyota Innova</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Message</label>
+    <textarea id="message" required name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+  </div>
+  <button type="submit">Book Now</button>
+</form>
+</body>
+</html>
