@@ -1,0 +1,49 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+div.headerabout {
+	margin-left: 50px;
+	font-size: 4.3vw;
+	font-weight: bold;
+	font-family: 'Open Sans', sans-serif;
+}
+div.mainabout{
+	margin-right: 50px;
+	margin-left: 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+	/********** Large devices only **********/
+	@media (min-width: 1200px) {
+	div.headerabout {
+	
+	font-size: 4vw;
+	
+	}  
+	  
+	}
+
+	/********** Medium devices only **********/
+	@media (min-width: 992px) and (max-width: 1199px) {
+	  div.headerabout {
+	
+	font-size: 3.7vw;
+	
+	}
+	}
+	
+	/********** Small devices only **********/
+	@media (min-width: 768px) and (max-width: 991px) {
+	 div.headerabout {
+	
+	font-size: 3.4vw;
+	
+	}
+	}
+
+	/********** Extra small devices only **********/
+	@media (max-width: 767px) {
+	div.headerabout {
+	
+	font-size: 6.5vw;
+	
+	}
+	}
