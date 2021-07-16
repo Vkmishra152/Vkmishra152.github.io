@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+  
+  <!-- Navbar-->
+  <div class="w3-bar navbar w3-card w3-top">
+    <!-- Logo-->
+    <a href="../main.html" class="w3-bar-item"><img src="../images/blacklogo1.png" alt="" height="70" /></a>
+    
+        <a class="w3-bar-item w3-button w3-padding-32 w3-hide-medium w3-hide-large w3-right navbar" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    
+<!-- Navbar links. Hide them on small screens -->
+    <div class="w3-hide-small">      
+      <a href="../pages/contact.html" class="w3-bar-item w3-right w3-button w3-padding-32"target="_blank;">Contact Us</a>
+      <a href="../pages/booking.html" class="w3-bar-item w3-right w3-button w3-padding-32"target="_blank;">Booking</a>
+      <a href="../pages/about.html" class="w3-bar-item w3-right w3-button w3-padding-32"target="_blank;">About</a>
+      <a href="../main.html" class="w3-bar-item w3-right w3-button w3-padding-32"target="_blank;">Home</a>
+    </div>
+
+  </div>
+<!-- Navbar on small screens-->
+<div id="navDemo" class="w3-bar-block navbar w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:86px">
+  <a href="../main.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"target="_blank;">Home</a>
+  <a href="../pages/about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"target="_blank;">About</a>
+  <a href="../pages/booking.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"target="_blank;">Booking</a>
+  <a href="../pages/contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"target="_blank;">Contact Us</a>
+</div>   
+<br><br><br><br>
+  <div style="font-weight: bold; font-size: 20px; text-align: center; " ><i class="fa fa-phone"> <i class="fa fa-whatsapp" ><a href="tel:+91-7009377093" style="text-decoration: none; "></i>+91-7009377093</i>  </a> <i class="fa fa-envelope"> <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bhindertravels06@gmail.com" target="_blank"style="text-decoration: none;"> bhindertravels06@gmail.com</a></i></div> 
+<!-- START CODE - BG IMAGE -->
+<div class="w3-display-container"
+    style="    
+    min-height: 300px;
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/book1.jpg);
+    ">
+
+<!-- Start Content -->
+<div class="w3-container w3-padding"
+  style="
+  color:white;
+  background:rgba(0,0,0,.3);
+  min-height:100px;
+  ">
+     <center>
+     <h2>Booking</h2>
+     <p><a href="../main.html" style="text-decoration: none;"> Home </a>/ Booking</p>
+     </center>      
+</div>
+<!-- End Content -->
+</div>
+<!-- END CODE - BG IMAGE -->
+
+<!-- Start Contact Section -->
+ <div class="w3-container w3-padding-32 w3-padding-large" id="contact">
+  <div class="w3-content" style="max-width:600px">
+    <h4 class="w3-center"><b>Booking</b></h4>
+
+    <script type="text/javascript">var submitted=false;</script>
+    
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='http://zerobudget.club/';}"></iframe> 
+    
+    <!-- Update the Google forms URL in action-->
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdiMnofvszKy-yfHChm6e_ERElLRhzmVSG0bPImqGvF_9Y3xw/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+      
+      <div class="w3-section">
+        <label><span>Name</span></label>
+        <input class="w3-input w3-border" type="text" placeholder="Name" id="name" required name="entry.119630161">
+      </div>
+      <div class="w3-section">
+        <label><span>Email Id</span></label>
+        <input class="w3-input w3-border" type="text" placeholder="Email" id="email" required name="entry.732933412">
+      </div>
+      <div class="w3-section">
+        <label><span>Phone Number</span></label>
+        <input class="w3-input w3-border" type="text" placeholder="Phone" id="phone" required name="entry.1567744875">
+      </div>
+      <div class="w3-section">
+        <label><span>Passengers</span></label>
+        <input class="w3-input w3-border" type="text" placeholder="Number of Passengers" id="phone" required name="entry.1478056492">
+      </div>
+      
+   <div class="elem-group inlined">
+      <label for="checkin-date"style="font-family: 'Nanum Gothic';font-weight: bold;font-size: 1.3em;">Check-in Date</label>
+      <input type="date" id="checkin-date" required name="entry.1384667088" required>
+     </div>
+    <div class="elem-group inlined">
+    <label for="checkout-date" style="font-family: 'Nanum Gothic';font-weight: bold;font-size: 1.3em;">Check-out Date</label>
+    <input type="date" id="checkout-date" required name="entry.1616679454" required>
+
+    </div><br>
+    <div class="w3-section"><br>
+    <label for="room-selection"><span>Select Car Preference</span></label>
+    <select id="room-selection" required name="entry.723297424" required>
+        <option value="connecting">Select Down Your Car</option>
+        <option value="connecting">Swift Dezire</option>
+        <option value="adjoining">Honda Amaze</option>
+        <option value="adjacent">Toyota Etios</option>
+        <option value="connecting">Innova Crysta</option>
+        <option value="connecting">Toyota Innova</option>
+    </select>
+    <div class="w3-section">
+      <label for="message"><span>Message</span></label>
+      <textarea id="message" required name="entry.2042674514" placeholder="Tell us anything else that might be important." required></textarea>
+      </div>
+      <div class="w3-section">
+        <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit">SEND</button>
+      </div>
+    </form>
+</div>
+</div>
+<!-- End Contact Section -->
+
+<!-- Footer -->
+<!-- The content of your page would go here. -->
+
+    <footer class="footer-distributed">
+
+      <div class="footer-left">
+          <img src="../images/blacklogo1.png">
+        
+
+        <p class="footer-links">
+          <a href="../main.html" target="_blank;">Home</a>
+          |
+          <a href="../pages/about.html" target="_blank;">About</a>
+          |
+          <a href="../pages/booking.html" target="_blank;">Booking</a>
+          |
+          <a href="../pages/contact.html" target="_blank;">Contact Us</a>
+        </p>
+
+        <p class="footer-company-name">© Copyright Bhinder Travels 2021 <br>All rights reserved & designed by Vijay Mishra</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+            <p><span style="display: block;color:#ffffff; font-size: 18px;font-weight: bold;">Preet Vihar, Airport Road</span>
+            Amritsar, Punjab 143101</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <a href="tel:+91-7009377093"><p>+91-7009377093</p></a>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=bhindertravels06@gmail.com@gmail.com" target="_blank"><p>bhindertravels06@gmail.com</p></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          It is never been simpler to find the best services nationwide. With thousands of satisfied customers every day, you can get best services through Bhinder Travels.</p>
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+      
+      <!-- jQuery (Bootstrap JS plugins depend on it) -->
+     <script src="../js/main.js"></script> 
+     <script src="../js/booking.js"></script>  
+</body>
+</html>
